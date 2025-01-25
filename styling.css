@@ -1,0 +1,222 @@
+:root{
+    --primary-color:#5AC4FF;
+    --secondary-color:#222222;
+    --smalltext-color:#444444;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    border: 2px solid red;
+    max-width: 100%;
+    background-color: white;
+    /* padding: 0 50px; */
+
+}
+.container{
+    border: 2px solid yellow;
+    max-width: 100%; 
+        /* background-color: var(--secondary-color); */
+  
+     /* padding: 0 50px; */
+/* width: 1200px; */
+/* margin: 0 auto; */
+}   
+.inner-container{
+    border: 1px solid blue;
+    max-width: 100%;
+    background-color: var(--secondary-color);
+    /* padding: 0 50px; */
+}
+.top-container{
+    border: 1px solid red;
+    /* background-color: var(--secondary-color); */
+   min-height: 570px;
+    max-width: 100%;
+    /* margin: 0 auto; */
+    position: relative;
+    display: block;
+    /* transform: rotate(2deg); */
+}
+.inner-header{
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* transform: rotate(-2deg); */
+}
+.inner-header .logoimage{
+    max-width: 100%;
+}
+.inner-header .logoimage img{
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+}
+.navigation{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: "Outfit", serif;
+    font-size: 14px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+}
+/* .nav-list li{
+    color: whitesmoke;
+} */
+.navigation .call-to-action{
+    /* border: 1px solid blue; */
+    border-radius: 20px;
+    padding: 12px 30px;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+}
+.nav-list li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.texts{
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin-top: 150px;
+    font-family: "Outfit", serif;
+    max-width: 100%;
+}
+.texts h1{
+    font-size: 76px;
+    color: whitesmoke;
+    font-weight: 900;
+}
+.texts span.tilted{
+    background-color: var(--primary-color);
+    /* border: 1px solid white; */
+    color: var(--secondary-color);
+    display: inline-block;
+    border-radius: 10px;
+    transform: rotate(1deg);
+    /* padding: 2px 4px; */
+    position: relative;
+}
+.texts .span-text{
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+.texts h4{
+    font-size: 28px;
+margin-top: 15px;
+color: whitesmoke;
+font-weight: 500;
+max-width: 100%;
+}
+.texts p{
+    font-size: 14px;
+    width: 600px;
+    max-width: 100%;
+    margin:0 auto;
+    color: #dddddd;
+font-weight: 300;
+margin-top: 15px;
+line-height: 24px;
+}
+.body-content{
+    border: 2px solid red;
+    margin: 0 40px;
+}
+.square-images{
+    /* border: 1px solid blue; */
+    max-width: 100%;
+display: flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+margin-top: -60px;
+padding: 0 100px;
+
+
+}
+.images{
+    /* border: 1px solid red; */
+    /* max-width: 100%; */
+    padding: 5px;
+    border-radius: 10px;
+background-color: #ffffff;
+box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.2), 0 6px 20px 0 rgba(228, 227, 227, 0.19);
+}
+.images img{
+    width: 180px;
+   /* max-width: 100%; */
+    border-radius: 10px;
+    align-items: center;
+}
+.square-images .tilt-right{
+    transform: rotate(8deg);
+}
+.square-images .tilt-left{
+    transform: rotate(-8deg);
+    margin-top: 20px;
+}
+.second-text{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    font-family: "Outfit", serif;
+    padding: 0 70px;
+    gap: 140px;
+    max-width: 100%;
+}
+.second-text h3{
+    border: 1px solid black;
+    font-size: 32px;
+    /* width: 300px; */
+    max-width: 100%;
+
+}
+.second-text p{
+    border: 1px solid black;
+    font-size: 14px;
+    /* width: 500px; */
+    max-width: 100%;
+line-height: 22px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+   .square-images{
+    max-width: 100%;
+    flex-wrap: wrap;
+   }
+   .images{
+    /* border: 1px solid red; */
+    max-width: 100%;
+}
+.images img{
+    width: 180px;
+   max-width: 100%;
+}
+.second-text{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 140px;
+    max-width: 100%;
+}
+}
+    
