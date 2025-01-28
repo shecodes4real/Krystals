@@ -73,6 +73,10 @@
     text-decoration: none;
     color: whitesmoke;
 }
+.navigation .fa-bars{
+    display: none;
+    /* border: 1px solid red; */
+}
 .texts{
     /* border: 1px solid blue; */
     text-align: center;
@@ -81,7 +85,7 @@
     max-width: 100%;
 }
 .texts h1{
-    font-size: 76px;
+    font-size: 68px;
     color: whitesmoke;
     font-weight: 900;
 }
@@ -101,10 +105,10 @@
     transform: rotate(-2deg);
 }
 .texts h4{
-    font-size: 28px;
+    font-size: 24px;
 margin-top: 15px;
 color: whitesmoke;
-font-weight: 500;
+font-weight: 600;
 max-width: 100%;
 }
 .texts p{
@@ -113,7 +117,7 @@ max-width: 100%;
     max-width: 100%;
     margin:0 auto;
     color: #dddddd;
-font-weight: 300;
+font-weight: 200;
 margin-top: 15px;
 line-height: 24px;
 }
@@ -131,6 +135,8 @@ line-height: 24px;
     /* border: 1px solid blue; */
     max-width: 100%;
     gap: 5px;
+    flex-wrap: wrap;
+
 display: flex;
 justify-content: center;
 align-content: center;
@@ -147,7 +153,7 @@ background-color: #ffffff;
 box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.2), 0 6px 20px 0 rgba(228, 227, 227, 0.19);
 }
 .images img{
-    width: 200px;
+    width: 210px;
    /* max-width: 100%; */
     border-radius: 10px;
     align-items: center;
@@ -172,14 +178,14 @@ box-shadow: 0 4px 8px 0 rgba(204, 204, 204, 0.2), 0 6px 20px 0 rgba(228, 227, 22
     gap: 70px;
     width: 100%;
     margin: 90px auto;
-    max-width: 1200px;
+    /* max-width: 1000px; */
 }
 .second-text h3{
     /* border: 1px solid black; */
-    font-size: 36px;
-    max-width: 330px;
+    font-size: 32px;
+    /* max-width: 330px; */
    width: 100%;
-margin-right: 130px;
+/* margin-right: 130px; */
 }
 .second-text .second-text-paragraph p{
     /* border: 1px solid black; */
@@ -349,6 +355,7 @@ margin-top: 20px;
     max-width: 100%;
 }
 .process{
+    width: 100%;
     max-width: 100%;
     margin-top: 80px;
 padding: 0 70px;
@@ -357,6 +364,7 @@ background-color: #222222;
 border: 4px solid var(--primary-color);
 clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 97%);
 position: relative;
+border: 1px solid red;
 }
 .inner-body-processes{
    padding: 120px 0 60px 0;
@@ -735,6 +743,8 @@ color:#333333;
    opacity: 0.3;
 }
 .breaker-divider{
+    max-width: 100%;
+    /* padding: 0 60px; */
         font-size: 2rem;
         display: grid;
         grid-template-columns: 1fr max-content 1fr;
@@ -750,9 +760,9 @@ background-color: #333333;
 
 .breaker{
     /* border: 2px solid red; */
-    margin: 0 auto;
+    margin: 30px auto;
     font-family: "Archivo", serif;
-
+    width: 100%;
 max-width: 100%;
 }
 .inner-breaker{
@@ -845,4 +855,92 @@ font-weight: 300;
 .footer-socials{
     display: flex;
     gap: 20px;
+}
+
+@media screen and (max-width:1200px){
+    
+
+    .breaker-divider{
+        /* padding: 0 60px; */
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;
+            grid-column-gap: 1.2rem;
+            align-items: center;
+    }
+}
+    
+
+
+@media screen and (max-width:768px){
+    .inner-container{
+        padding: 30px;
+    }
+    .navigation .nav-list,.call-to-action{
+        display: none;
+    }
+    .navigation .fa-bars{
+        display: inline-flex;
+    }
+    .texts h1{
+        font-size: 54px;
+    }
+    .texts h4{
+        font-size: 24px;
+    }
+    .texts p{
+        font-size: 14px;
+    }
+    .second-text{
+        display: grid;
+        grid-template-columns: auto;
+      
+        padding: 0 80px;
+        gap: 20px;
+
+    }
+    .second-text h3{
+        font-size: 32px;
+    }
+    .second-text .second-text-paragraph p{
+        font-size: 14px;
+    }
+    .services h1{
+        font-size: 28px;
+        font-weight: 800;
+    }
+    .column{
+        display: grid;
+        grid-template-columns: 1.5fr ;
+        gap: 40px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .column-img{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+    }
+    .process-header{
+        font-size: 36px;
+    }
+    .process-grid{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+        /* margin-top: 40px; */
+        width: 350px;
+        max-width: 100%;
+    }
+    
+}
+
+
+@media screen and (max-width:480px){
+    .texts h1{
+        font-size: 42px;
+    }
+    .texts h4{
+        font-size: 18px;
+    }
 }
